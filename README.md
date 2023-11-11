@@ -1,8 +1,11 @@
-# Rust & Tauri Knowledge Base for Custom GPT
+<p align="center">
+  <img alt="Rust & Tauri ChatGPT Assistant Logo" height="128" src="logo.webp" />
+  <h1 align="center">Rust & Tauri ChatGPT Assistant</h1>
+</p>
 
 [![img-chatgpt]][link-chatgpt]
 
-Rust & Tauri documentation repository designed to feed a "Rust Assistant" Custom OpenAI GPT.
+Rust & Tauri Knowledge Base for OpenAI Custom GPT.
 
 ## Documentation Repositories
 
