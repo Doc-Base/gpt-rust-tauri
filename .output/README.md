@@ -38,6 +38,12 @@ This directory contains the Markdown files explaining the concept of "editions",
 
 - Directory: `./edition-guide`
 
+### Tauri Official Documentation
+
+This directory contains the Markdown files of the official Tauri documentation.
+
+- Directory: `./tauri-docs`
+
 ## File List
 
 - [.output/reference/names/namespaces.md](.output/reference/names/namespaces.md)

@@ -52,6 +52,14 @@ This directory contains the Markdown files explaining the concept of "editions",
 - [README](./edition-guide/README.md)
 - [Repository](https://github.com/rust-lang/edition-guide)
 
+### Tauri Official Documentation
+
+This directory contains the Markdown files of the official Tauri documentation.
+
+- Directory: `./tauri-docs`
+- [README](./tauri-docs/README.md)
+- [Repository](https://github.com/tauri-apps/tauri-docs)
+
 ## Contribute
 
 ```
