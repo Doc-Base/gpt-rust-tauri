@@ -1,6 +1,6 @@
 # Rust & Tauri Knowledge Base for Custom GPT
 
-Rust & Tauri documentation repository designed to feed a "Rust Assistant" Custom GPT.
+Rust & Tauri documentation repository designed to feed a "Rust Assistant" Custom OpenAI GPT.
 
 ## Documentation Repositories
 
