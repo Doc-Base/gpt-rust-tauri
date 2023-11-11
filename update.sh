@@ -33,7 +33,7 @@ echo "==========================================================================
 echo "[ARCHIVING] Generation Custom GPT Knowledge Base..."
 rm -Rf ./*.tar.gz
 current_datetime=$(date "+%Y%m%d-%H%M%S")
-archive_name="KNOWLEDGE-BASE_${current_datetime}.tar.gz"
+archive_name="CUSTOM-GPT-RUST-TAURI-KNOWLEDGE-BASE_${current_datetime}.tar.gz"
 tar -czf "${archive_name}" ./.output
 echo "[ARCHIVING] Generation Custom GPT Knowledge Base... Done."
 
