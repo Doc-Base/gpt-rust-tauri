@@ -1,5 +1,7 @@
 # Rust & Tauri Knowledge Base for Custom GPT
 
+[![img-chatgpt]][link-chatgpt]
+
 Rust & Tauri documentation repository designed to feed a "Rust Assistant" Custom OpenAI GPT.
 
 ## Documentation Repositories
@@ -65,3 +67,9 @@ This directory contains the Markdown files of the official Tauri documentation.
 ```
 make update
 ```
+
+---
+
+[img-chatgpt]: https://img.shields.io/badge/Custom%20ChatGPT-Start%20a%20%20Chat-baa5c3?style=for-the-badge
+
+[link-chatgpt]: https://chat.openai.com/g/g-GjZIE8Rr8-rust-tauri-assistant
