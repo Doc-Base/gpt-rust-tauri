@@ -27,5 +27,7 @@ jobs:
       - name: Release
         uses: ncipollo/release-action@v1
         with:
+          allowUpdates: true
           artifacts: "*.tar.gz"
+          token: ${{ secrets.GITHUB_TOKEN }}}
           tag: ${{ steps.tag.outputs.RELEASE_TAG }}
