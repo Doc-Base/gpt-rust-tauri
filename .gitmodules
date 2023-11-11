@@ -1,0 +1,18 @@
+[submodule "perf-book"]
+	path = perf-book
+	url = https://github.com/nnethercote/perf-book.git
+[submodule "nomicon"]
+	path = nomicon
+	url = https://github.com/rust-lang/nomicon.git
+[submodule "reference"]
+	path = reference
+	url = https://github.com/rust-lang/reference.git
+[submodule "book"]
+	path = book
+	url = https://github.com/rust-lang/book.git
+[submodule "rust-by-example"]
+	path = rust-by-example
+	url = https://github.com/rust-lang/rust-by-example.git
+[submodule "edition-guide"]
+	path = edition-guide
+	url = https://github.com/rust-lang/edition-guide.git

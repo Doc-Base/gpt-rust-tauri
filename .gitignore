@@ -1,0 +1,3 @@
+/.output/*
+!/.output/README.md
+/db-dump.tar.gz
