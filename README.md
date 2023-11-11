@@ -44,15 +44,6 @@ This directory contains the Markdown files for unsafe Rust programming.
 - [README](./nomicon/README.md)
 - [Repository](https://github.com/rust-lang/nomicon)
 
-### Rust's standard library SIMD components
-
-This directory contains the Markdown files of Rust's core library architecture-specific intrinsics,
-and Rust's standard library run-time CPU feature detection.
-
-- Directory: `./stdarch`
-- [README](./stdarch/README.md)
-- [Repository](https://github.com/rust-lang/stdarch)
-
 ### Rust Edition Guide
 
 This directory contains the Markdown files explaining the concept of "editions", major new eras in Rust's development.
@@ -60,12 +51,6 @@ This directory contains the Markdown files explaining the concept of "editions",
 - Directory: `./edition-guide`
 - [README](./edition-guide/README.md)
 - [Repository](https://github.com/rust-lang/edition-guide)
-
-### Tauri
-
-- Directory: `./backtrace-rs`
-- [README](./backtrace-rs/README.md)
-- [Repository](https://github.com/rust-lang/backtrace-rs)
 
 ## Contribute
 

@@ -32,19 +32,8 @@ This directory contains the Markdown files for unsafe Rust programming.
 
 - Directory: `./nomicon`
 
-### Rust's standard library SIMD components
-
-This directory contains the Markdown files of Rust's core library architecture-specific intrinsics,
-and Rust's standard library run-time CPU feature detection.
-
-- Directory: `./stdarch`
-
 ### Rust Edition Guide
 
 This directory contains the Markdown files explaining the concept of "editions", major new eras in Rust's development.
 
 - Directory: `./edition-guide`
-
-### Tauri
-
-- Directory: `./backtrace-rs`
