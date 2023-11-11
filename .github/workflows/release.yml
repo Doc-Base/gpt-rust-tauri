@@ -29,5 +29,5 @@ jobs:
         with:
           allowUpdates: true
           artifacts: "*.tar.gz"
-          token: ${{ secrets.GITHUB_TOKEN }}}
+          token: ${{ secrets.GH_PAT }}
           tag: ${{ steps.tag.outputs.RELEASE_TAG }}
