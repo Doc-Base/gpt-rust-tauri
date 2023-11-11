@@ -63,9 +63,12 @@ echo "[ARCHIVING] Generation Custom GPT Knowledge Base..."
 rm -Rf ./*.tar.gz
 current_datetime=$(date "+%Y%m%d-%H%M%S")
 archive_name="CUSTOM-GPT-RUST-TAURI-KNOWLEDGE-BASE_${current_datetime}.tar.gz"
-tar -czf "${archive_name}" ./.output
+pushd ./.output
+tar -czf "${archive_name}" *
+popd
+mv "./.output/${archive_name}" "./${archive_name}"
 echo "[ARCHIVING] Generation Custom GPT Knowledge Base... Done."
 
 echo "================================================================================"
 echo ""
-echo "You can now upload this archive to your Custom GPT Assistant: ${archive_name}."
+echo "You can now upload this archive to your Custom GPT Assistant: ./${archive_name}."
