@@ -1,9 +1,13 @@
 <p align="center">
   <img alt="Rust & Tauri ChatGPT Assistant Logo" height="128" src="logo.webp" />
   <h1 align="center">Rust & Tauri ChatGPT Assistant</h1>
-</p>
 
-[![img-chatgpt]][link-chatgpt]
+</p>
+<p align="center">
+  <a href="https://chat.openai.com/g/g-GjZIE8Rr8-rust-tauri-assistant">
+    <img src="https://img.shields.io/badge/Custom%20ChatGPT-Start%20a%20%20Chat-baa5c3?style=for-the-badge">
+  </a>
+</p>
 
 Rust & Tauri Knowledge Base for OpenAI Custom GPT.
 
