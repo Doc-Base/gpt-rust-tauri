@@ -1,4 +1,4 @@
-# Rust & Tauri Knowledge Base for OpenAI Custom GPT
+# Rust & Tauri Knowledge Base for Custom GPT
 
 Rust & Tauri documentation repository designed to feed a "Rust Assistant" Custom GPT.
 
