@@ -18,16 +18,45 @@ echo "==========================================================================
 echo "[GENERATION] Generating Custom GPT documentation..."
 find ./.output -mindepth 1 ! -name 'README.md' -exec rm -Rf {} +
 sleep 1 # Wait for the filesystem to catch up
-declare -a documentation_subdirectories=("book" "edition-guide" "nomicon" "perf-book" "reference" "rust-by-example")
+declare -a documentation_subdirectories=("book" "edition-guide" "nomicon" "perf-book" "reference" "rust-by-example" "tauri-docs")
 for subdir in "${documentation_subdirectories[@]}"; do
-  find "./$subdir" -type f -name "*.md" | while read -r src_file; do
+  if [[ "$subdir" == "tauri-docs" ]]; then
+    search_path="./$subdir/docs"
+  else
+    search_path="./$subdir/src"
+  fi
+
+  find "${search_path}" -type f -name "*.md" | while read -r src_file; do
+    if [[ "$subdir" == "tauri-docs" ]]; then
+      dest_file="${src_file/.\//./.output/tauri-docs/}" # Special path for tauri-docs
+    else
       dest_file="${src_file/.\//./.output/}" # Replace './' with './.output/' at the beginning
       dest_file="${dest_file/src\//}" # Remove '/src/' part
-      mkdir -p "$(dirname "$dest_file")"
-      cp "$src_file" "$dest_file"
+    fi
+
+    mkdir -p "$(dirname "$dest_file")"
+    cp "$src_file" "$dest_file"
   done
 done
 echo "[GENERATION] Generating Custom GPT documentation... Done."
+
+echo "================================================================================"
+echo "[INDEXING] Updating Custom GPT documentation REAME..."
+echo -e "## File List\n" > temp_readme.md
+cat ./.output/README.md | sed '/## File List/q' >> ./.output/README.md.temp
+mv ./.output/README.md.temp ./.output/README.md
+sleep 1 # Wait for the filesystem to catch up
+{
+    echo ""
+    find ./.output -type f -name "*.md" | grep -v 'README.md' | while read -r src_file; do
+        # Get the relative file path
+        relative_path="${src_file/.\//}"
+        # Format as markdown link
+        echo "- [${relative_path}](${relative_path})"
+    done
+    echo ""
+} >> ./.output/README.md
+echo "[INDEXING] Updating Custom GPT documentation README... Done."
 
 echo "================================================================================"
 echo "[ARCHIVING] Generation Custom GPT Knowledge Base..."

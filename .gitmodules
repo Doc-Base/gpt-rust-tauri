@@ -16,3 +16,6 @@
 [submodule "edition-guide"]
 	path = edition-guide
 	url = https://github.com/rust-lang/edition-guide.git
+[submodule "tauri-docs"]
+	path = tauri-docs
+	url = https://github.com/tauri-apps/tauri-docs.git
