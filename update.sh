@@ -59,7 +59,7 @@ sleep 1 # Wait for the filesystem to catch up
 echo "[INDEXING] Updating Custom GPT documentation README... Done."
 
 echo "================================================================================"
-echo "[ARCHIVING] Generation Custom GPT Knowledge Base..."
+echo "[ARCHIVING] Generating Custom GPT Knowledge Base..."
 rm -Rf ./*.tar.gz
 version_tag=$(date "+%Y.%m.%d")
 archive_name="custom_gpt_rust_tauri_knowledge_base-v${version_tag}.tar.gz"
@@ -67,7 +67,7 @@ pushd ./.output
 tar -czf "${archive_name}" *
 popd
 mv "./.output/${archive_name}" "./${archive_name}"
-echo "[ARCHIVING] Generation Custom GPT Knowledge Base... Done."
+echo "[ARCHIVING] Generating Custom GPT Knowledge Base... Done."
 
 echo "================================================================================"
 echo ""
