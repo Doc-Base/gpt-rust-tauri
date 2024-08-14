@@ -27,10 +27,12 @@ jobs:
           trust_level: ultimate
       - name: Add, Commit & Push
         run: |
+          touch test.txt
           git config --global user.email "ivan.gabriele+github@protonmail.com"
           git config --global user.name "Ivan Gabriele (Github)"
           git add .
-          git commit -m "feat: update knowledge base"
+          # git commit -m "feat: update knowledge base"
+          git commit -m "test: add test.txt from workflow"
           git push
       - name: Create Release Tag
         id: tag
