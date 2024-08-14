@@ -42,7 +42,6 @@ echo "[GENERATION] Generating Custom GPT documentation... Done."
 
 echo "================================================================================"
 echo "[INDEXING] Updating Custom GPT documentation REAME..."
-echo -e "## File List\n" > temp_readme.md
 cat ./.output/README.md | sed '/## File List/q' >> ./.output/README.md.temp
 mv ./.output/README.md.temp ./.output/README.md
 sleep 1 # Wait for the filesystem to catch up
