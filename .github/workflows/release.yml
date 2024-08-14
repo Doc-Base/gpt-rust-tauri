@@ -1,10 +1,8 @@
 name: Release
-
 on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
-
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -26,12 +24,11 @@ jobs:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
           trust_level: ultimate
       - name: Add, Commit & Push
-        run: |
-          git config --global user.email "ivan.gabriele+github@protonmail.com"
-          git config --global user.name "Ivan Gabriele (Github)"
-          git add .
-          git commit -m "feat: update knowledge base"
-          git push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "feat: update knowledge base index"
+          commit_user_email: ivan.gabriele+github@protonmail.com
+          commit_user_name: "Ivan Gabriele (Github)"
       - name: Create Release Tag
         id: tag
         run: echo "RELEASE_TAG=v$(date +'%Y.%m.%d')" >> $GITHUB_OUTPUT
