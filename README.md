@@ -4,7 +4,7 @@
 
 </p>
 <p align="center">
-  <a href="https://chat.openai.com/g/g-GjZIE8Rr8-rust-tauri-assistant">
+  <a href="https://chatgpt.com/g/g-GjZIE8Rr8-rust-tauri-assistant">
     <img src="https://img.shields.io/badge/Custom%20ChatGPT-Start%20a%20%20Chat-baa5c3?style=for-the-badge">
   </a>
 </p>
@@ -74,9 +74,3 @@ This directory contains the Markdown files of the official Tauri documentation.
 ```
 make update
 ```
-
----
-
-[img-chatgpt]: https://img.shields.io/badge/Custom%20ChatGPT-Start%20a%20%20Chat-baa5c3?style=for-the-badge
-
-[link-chatgpt]: https://chat.openai.com/g/g-GjZIE8Rr8-rust-tauri-assistant
